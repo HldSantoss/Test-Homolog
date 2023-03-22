@@ -1,0 +1,26 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<div class="container">
+	<div class="row">
+		<h2 class="text-danger mb-2">Lista de Artigos</h2>
+		
+		
+		<table class="table table-bordered success mt-3">
+      <thead>
+        <tr>
+            <th>Autores</th>
+            <th>Titulos</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of articles">
+            <td>{{a.author}}</td>
+            <td>{{a.title}}</td>
+            <td>{{a.description}}</td>   
+        </tr>
+    </tbody>
+			</table>
+	</div>
+</div>
