@@ -7,6 +7,10 @@ export interface Articles {
     urlToImage?: string
     publishedAt: string
     content: string
+    id: string,
+    order: string,
+    error: string,
+    dateError: Date
   }
   
   export interface Source {
